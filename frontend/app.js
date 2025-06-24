@@ -5,7 +5,7 @@ const input3 = document.getElementById('input3');
 const butt = document.getElementById('butt');
 const resu = document.getElementById('resu')
 async function api(i, i1, i2, i3, type) {
-  const url = `http://127.0.0.1:5000/${type}`;
+  const url = `https://int-calc.onrender.com/${type}`;
   const res = await fetch(url, {
     method: "POST",
     headers: {
