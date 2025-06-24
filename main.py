@@ -48,7 +48,7 @@ def center_sum():
         sums.append(delta_x * f(a + (i+ 0.5) * delta_x))
     return jsonify({"approx": sum(sums)})
 @app.route('/trap_sum', methods=['POST'])
-def center_sum():
+def trap_sum():
     data = request.get_json()
     x = symbols('x')                      # define variable
     expr_str = data['expr']                  # get expression string from request

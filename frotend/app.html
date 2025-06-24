@@ -8,12 +8,17 @@
 </head>
 <body>
     <div><h1>determine the area under the function</h1></div>
-    <input placeholder="enter your function">
-    <radio required name = 'y' id = "left">left riemann sum(understimate of area)</radio>
-    <radio required name = 'y' id = "right">right riemann sum(overstimate of area)</radio>
-    <radio required name = 'y' id = "center">center riemann sum(average of left and right but not as accurate as either)</radio>
-    <radio required name = 'y' id = "trapezoid">trapezoidal riemann sum(best estimate,uses trapezoids)</radio>
-    <button id = >get area</button>
+    <input id="input" placeholder="enter your function">
+    <input id="input1" placeholder="enter your starting x coordinate">
+    <input id="input2" placeholder="enter your ending coordinate">
+    <input id="input3" placeholder="enter the numebr of shapes(the more the better the estimate but i would sugesst not putting more than 1000")>
+<form id = 'form'>
+    <radio value = 'left_sum' required name = 'y' id = "left">left riemann sum(understimate of area)</radio>
+    <radio value = 'right_sum'required name = 'y' id = "right">right riemann sum(overstimate of area)</radio>
+    <radio value = "center_sum" required name = 'y' id = "center">center riemann sum(average of left and right but not as accurate as either)</radio>
+    <radio value = "trap_sum" required name = 'y' id = "trapezoid">trapezoidal riemann sum(best estimate,uses trapezoids)</radio>
+    </form>
+    <button id = "butt" >get area</button>
     <script src="app.js"></script>
 </body>
 </html>
