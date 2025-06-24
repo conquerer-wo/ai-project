@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    max-width: 420px;
+    margin: 48px auto 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+    padding: 36px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #222e3a;
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="text"], input[type="number"], input[placeholder] {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1.5px solid #d1d9e6;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    background: #f8fafc;
+    margin-top: 7px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[placeholder]:focus {
+    border: 1.5px solid #5fa8d3;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(95, 168, 211, 0.08);
+}
+
+.radio-group {
+    display: flex;
+    gap: 18px;
+    margin: 18px 0 8px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input[type="radio"] {
+    accent-color: #5fa8d3;
+    transform: scale(1.18);
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 1.05rem;
+    color: #2c3e50;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+button#butt {
+    width: 100%;
+    padding: 14px 0;
+    background: linear-gradient(90deg, #5fa8d3 0%, #38b6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.13rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.09);
+    margin-top: 18px;
+    letter-spacing: 0.5px;
+    transition: background 0.18s, transform 0.12s, box-shadow 0.18s;
+}
+
+button#butt:hover, button#butt:focus {
+    background: linear-gradient(90deg, #3b82c4 0%, #1fa2ff 100%);
+    transform: translateY(-2px) scale(1.025);
+    box-shadow: 0 4px 18px rgba(44, 62, 80, 0.13);
+    outline: none;
+}
+
+input[type="radio"] + label {
+    margin-right: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 18px 6vw 22px 6vw;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
+    button#butt {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+    .form-group {
+        margin-bottom: 16px;
+    }
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

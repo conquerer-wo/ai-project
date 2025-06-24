@@ -7,21 +7,35 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div><h1>determine the area under the function</h1></div>
-    <input id="input" placeholder="enter your function">
-    <input id="input1" placeholder="enter your starting x coordinate">
-    <input id="input2" placeholder="enter your ending coordinate">
-    <input id="input3" placeholder="enter the numebr of shapes(the more the better the estimate but i would sugesst not putting more than 1000")>
-    <br>
-
-    <!-- ...existing code... -->
-<input checked type="radio" value="left_sum" required name="y" id="left"> left sum <br>
-<input type="radio" value="right_sum" required name="y" id="right"> right sum <br>
-<input type="radio" value="center_sum" required name="y" id="center"> center sum <br>
-<input type="radio" value="trap_sum" required name="y" id="trapezoid"> trapezodial sum <br>
-<!-- ...existing code... -->
-    
-    <button id = "butt" >get area</button>
+    <div class="container">
+        <h1>Determine the Area Under the Function</h1>
+        <div class="form-group">
+            <label for="input">Function</label>
+            <input id="input" type="text" placeholder="Enter your function">
+        </div>
+        <div class="form-group">
+            <label for="input1">Starting x coordinate</label>
+            <input id="input1" type="number" placeholder="Enter your starting x coordinate">
+        </div>
+        <div class="form-group">
+            <label for="input2">Ending x coordinate</label>
+            <input id="input2" type="number" placeholder="Enter your ending coordinate">
+        </div>
+        <div class="form-group">
+            <label for="input3">Number of shapes</label>
+            <input id="input3" type="number" placeholder="Enter the number of shapes (suggest ≤ 1000)">
+        </div>
+        <div class="radio-group">
+            <input checked type="radio" value="left_sum" required name="y" id="left">
+            <label for="left">Left sum</label>
+            <input type="radio" value="right_sum" required name="y" id="right">
+            <label for="right">Right sum</label>
+            <input type="radio" value="center_sum" required name="y" id="center">
+            <label for="center">Center sum</label>
+            <input type="radio" value="trap_sum" required name="y" id="trapezoid">
+            <label for="trapezoid">Trapezoidal sum</label>
+        </div>
+        <button id="butt">Get Area</button>
+    </div>
     <script src="app.js"></script>
 </body>
-</html>
