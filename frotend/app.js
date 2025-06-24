@@ -3,7 +3,7 @@ const input1 = document.getElementById('input1');
 const input2 = document.getElementById('input2');
 const input3 = document.getElementById('input3');
 const butt = document.getElementById('butt');
-
+const resu = document.getElementById('resu')
 async function api(i, i1, i2, i3, type) {
   const url = `http://127.0.0.1:5000/${type}`;
   const res = await fetch(url, {
@@ -20,7 +20,7 @@ async function api(i, i1, i2, i3, type) {
   });
 
   const data = await res.json();
-  console.log(data.approx);
+  resu.textContent = `the area is approximatly ${data.approx} units`
 }
 
 function handleSubmit() {
