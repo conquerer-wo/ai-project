@@ -12,12 +12,15 @@
     <input id="input1" placeholder="enter your starting x coordinate">
     <input id="input2" placeholder="enter your ending coordinate">
     <input id="input3" placeholder="enter the numebr of shapes(the more the better the estimate but i would sugesst not putting more than 1000")>
-<form id = 'form'>
-    <radio value = 'left_sum' required name = 'y' id = "left">left riemann sum(understimate of area)</radio>
-    <radio value = 'right_sum'required name = 'y' id = "right">right riemann sum(overstimate of area)</radio>
-    <radio value = "center_sum" required name = 'y' id = "center">center riemann sum(average of left and right but not as accurate as either)</radio>
-    <radio value = "trap_sum" required name = 'y' id = "trapezoid">trapezoidal riemann sum(best estimate,uses trapezoids)</radio>
-    </form>
+    <br>
+
+    <!-- ...existing code... -->
+<input checked type="radio" value="left_sum" required name="y" id="left"> left sum <br>
+<input type="radio" value="right_sum" required name="y" id="right"> right sum <br>
+<input type="radio" value="center_sum" required name="y" id="center"> center sum <br>
+<input type="radio" value="trap_sum" required name="y" id="trapezoid"> trapezodial sum <br>
+<!-- ...existing code... -->
+    
     <button id = "butt" >get area</button>
     <script src="app.js"></script>
 </body>

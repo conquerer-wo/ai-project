@@ -1,7 +1,17 @@
 from flask import Flask,request, jsonify
 from sympy import symbols, sympify, lambdify
 import numpy as np
+from flask_cors import CORS
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app, supports_credentials=True, resources={
+    r"/*": {
+        "origins": "http://127.0.0.1:5500",
+        "methods": ["POST", "OPTIONS"]
+    }
+})
+
+
 @app.route('/left_sum', methods=['POST'])
 def left_sum():
     data = request.get_json()
